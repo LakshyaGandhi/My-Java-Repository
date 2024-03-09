@@ -6,6 +6,9 @@ Welcome to my Java Repository! As a tech enthusiast, I've created this space to 
 [![email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lakshya.gandhi@outlook.com)
 [![website](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/919173371626)
 
+## License
+[![website](https://img.shields.io/badge/License-AGPL3-015d93.svg?style=for-the-badge&labelColor=blue)](https://github.com/LakshyaGandhi/My-Java-Repository/blob/master/LICENSE)
+
 ## Overview
 
 This repository houses several Java projects, each serving a different purpose. From small utilities to full-fledged applications, I've poured my passion for coding into these creations. Here's what you'll find:
