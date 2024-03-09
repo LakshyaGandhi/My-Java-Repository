@@ -30,9 +30,9 @@ To help us better understand the nature and scope of the possible issue, please 
 
 This information will help us triage your report more quickly.
 
-## GNU General Public License 3.0 Compliance
+## GNU Affero General Public License v3.0 Compliance [![website](https://img.shields.io/badge/License-AGPL3-015d93.svg?style=for-the-badge&labelColor=blue)](https://github.com/LakshyaGandhi/My-Java-Repository/blob/master/LICENSE)
 
-This project is licensed under the GPL License 3.0. Any use, distribution, or modification of this project must comply with this license. This includes, but is not limited to, providing appropriate attribution, preserving all notices of the GPL License in all copies or substantial portions of the Software, and distributing any modifications under the same terms.
+This project is licensed under the AGPLv3 License. Any use, distribution, or modification of this project must comply with the terms of this license. This includes, but is not limited to, providing appropriate attribution, preserving all notices of the AGPLv3 License in all copies or substantial portions of the Software, and if you modify and convey the software, or if you run it on a server and let others use it, you must also offer them access to the source code of your version.
 
 ## Plagiarism and Copying
 
