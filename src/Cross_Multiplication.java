@@ -13,15 +13,13 @@ public class Cross_Multiplication {
 	 */
 	
 	public static void main(String[] args) {
-		// Print the title of the program
+		//Welcome Message
 		System.out.println("Cross Multiplication");
-		// Print a note about program limitations
 		System.out.println("Note: Program only supports number(constants), not variable & fractions.");
-		// Loop to keep the program running until the user exits
 		while (true) {
 			// Prompt the user to enter a1 or exit
 			System.out.println("\nEnter value of a1 to start the program");
-			System.out.println("OR Type 'exit' to quit the program."); //user input for typing first number or exit
+			System.out.println("OR Type 'exit' to quit the program.");
 			Scanner extscan = new Scanner(System.in);
 			String ex = extscan.nextLine();
 			String ext = ex.toLowerCase();
@@ -29,7 +27,6 @@ public class Cross_Multiplication {
 				System.exit(0);
 			} else {
 				try {
-					// Check if the input is a valid number
 					Double.parseDouble(ex);
 					Scanner sc = new Scanner(System.in);
 					double a1 = Double.parseDouble(ex);
@@ -37,31 +34,26 @@ public class Cross_Multiplication {
 					System.out.print("Enter value of b1 = ");
 					String b = sc.nextLine();
 					try {
-						// Check if the input for b1 is a valid number
 						double b1 = Double.parseDouble(b);
 						// Prompt the user to enter value of c1
 						System.out.print("Enter value of c1 = ");
 						String c = sc.nextLine();
 						try {
-							// Check if the input for c1 is a valid number
 							double c1 = Double.parseDouble(c);
 							// Prompt the user to enter value of a2
 							System.out.print("Enter value of a2 = ");
 							String aa = sc.nextLine();
 							try {
-								// Check if the input for a2 is a valid number
 								double a2 = Double.parseDouble(aa);
 								// Prompt the user to enter value of b2
 								System.out.print("Enter value of b2 = ");
 								String bb = sc.nextLine();
 								try {
-									// Check if the input for b2 is a valid number
 									double b2 = Double.parseDouble(bb);
 									// Prompt the user to enter value of c2
 									System.out.print("Enter value of c2 = ");
 									String cc = sc.nextLine();
 									try {
-										// Check if the input for c2 is a valid number
 										double c2 = Double.parseDouble(cc);
 										// Perform the cross multiplication calculations
 										double x = (b1 * c2) - (b2 * c1), y = (c1 * a2) - (c2 * a1), one = (a1 * b2) - (a2 * b1);

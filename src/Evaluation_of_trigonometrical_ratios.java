@@ -26,8 +26,10 @@ public class Evaluation_of_trigonometrical_ratios {
 	 * @param args Command-line arguments (not used).
 	 */
 	public static void main(String[] args) {
+		//Welcome message
 		System.out.println("Evaluation of Trigonometrical Ratios");
 		while (true) {
+			//Prompt the user for options
 			System.out.println("\nEnter the provided ratio");
 			System.out.println("Type 1: sin");
 			System.out.println("Type 2: cos");
@@ -35,7 +37,7 @@ public class Evaluation_of_trigonometrical_ratios {
 			System.out.println("Type 4: cosec");
 			System.out.println("Type 5: sec");
 			System.out.println("Type 6: cot");
-			System.out.println("OR Type 'exit' to quit the program."); //user input for typing the number or exit
+			System.out.println("OR Type 'exit' to quit the program.");
 			System.out.print("Enter your choice = ");
 			Scanner extscan = new Scanner(System.in);
 			String ex = extscan.nextLine();
@@ -46,7 +48,7 @@ public class Evaluation_of_trigonometrical_ratios {
 					break;
 				
 				case "1":
-					// Sin calculation
+					//! Sin calculation
 					System.out.println("SIN");
 					System.out.print("Enter numerator/opposite/perpendicular = ");
 					String x1 = extscan.nextLine();
@@ -67,7 +69,7 @@ public class Evaluation_of_trigonometrical_ratios {
 					break;
 				
 				case "2":
-					// Cos calculation
+					//! Cos calculation
 					System.out.println("COS");
 					System.out.print("Enter numerator/adjacent/base = ");
 					String y1 = extscan.nextLine();
@@ -88,7 +90,7 @@ public class Evaluation_of_trigonometrical_ratios {
 					break;
 				
 				case "3":
-					// Tan calculation
+					//! Tan calculation
 					System.out.println("TAN");
 					System.out.print("Enter numerator/opposite/perpendicular = ");
 					String z1 = extscan.nextLine();
@@ -109,7 +111,7 @@ public class Evaluation_of_trigonometrical_ratios {
 					break;
 				
 				case "4":
-					// Cosec calculation
+					//! Cosec calculation
 					System.out.println("COSEC");
 					System.out.print("Enter numerator/hypotenuse = ");
 					String a1 = extscan.nextLine();
@@ -130,7 +132,7 @@ public class Evaluation_of_trigonometrical_ratios {
 					break;
 				
 				case "5":
-					// Sec calculation
+					//! Sec calculation
 					System.out.println("SEC");
 					System.out.print("Enter numerator/hypotenuse = ");
 					String b1 = extscan.nextLine();
@@ -151,7 +153,7 @@ public class Evaluation_of_trigonometrical_ratios {
 					break;
 				
 				case "6":
-					// Cot calculation
+					//! Cot calculation
 					System.out.println("COT");
 					System.out.print("Enter numerator/adjacent/base = ");
 					String c1 = extscan.nextLine();

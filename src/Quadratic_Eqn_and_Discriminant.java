@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Quadratic_Eqn_and_Discriminant {
 	/**
 	 * Method to simplify the fraction to its simplest form.
-	 * @param numerator Numerator of the fraction.
+	 *
+	 * @param numerator   Numerator of the fraction.
 	 * @param denominator Denominator of the fraction.
 	 */
 	public static void simplest_form_fraction(double numerator, double denominator) {
@@ -22,9 +23,9 @@ public class Quadratic_Eqn_and_Discriminant {
 			out += n_abs;
 		else if (numerator < 0 && denominator == 1) // if n=neg and d=1
 			out = "-" + n_abs;
-		else if (numerator > 0 && denominator == -1) // if n=pos and d=-1
+		else if (numerator > 0 && denominator == - 1) // if n=pos and d=-1
 			out = "-" + n_abs;
-		else if (numerator < 0 && denominator == -1) // if n=neg and d=-1
+		else if (numerator < 0 && denominator == - 1) // if n=neg and d=-1
 			out += n_abs;
 		else if (numerator > 0 && denominator > 0) // if n=pos and d=pos
 			out = n_abs + " / " + d_abs;
@@ -40,6 +41,7 @@ public class Quadratic_Eqn_and_Discriminant {
 	
 	/**
 	 * Main method to execute the program.
+	 *
 	 * @param args Command-line arguments (not used).
 	 */
 	public static void main(String[] args) {
@@ -75,15 +77,16 @@ public class Quadratic_Eqn_and_Discriminant {
 				System.out.print("Enter your choice = ");
 				String ex = sc.nextLine();
 				String ext = ex.toLowerCase();
-				double D = (b * b) - 4 * a * c; // D=Discriminant
+				double D = (b * b) - 4 * a * c; //? D=Discriminant
 				switch (ext) {
 					case "exit":
 						System.exit(0);
 						break;
-					case "1": { // Quadratic Equation
+					case "1": {
+//						Quadratic Equation
 						double numerator_pos, numerator_neg;
-						numerator_pos = -b + Math.sqrt(D);
-						numerator_neg = -b - Math.sqrt(D);
+						numerator_pos = - b + Math.sqrt(D);
+						numerator_neg = - b - Math.sqrt(D);
 						double denominator = 2 * a;
 						if ((numerator_pos / denominator) != (int) (numerator_pos / denominator) || (numerator_neg / denominator) != (int) (numerator_neg / denominator)) {
 							// if numerator=pos
@@ -97,14 +100,12 @@ public class Quadratic_Eqn_and_Discriminant {
 						System.out.println("x = " + (numerator_pos / denominator) + ", " + (numerator_neg / denominator));
 						break;
 					}
-					case "2": { // Discriminant
+					case "2": {
+//						Discriminant
 						System.out.println("D = " + D);
-						if (D == 0)
-							System.out.println("D = 0. Roots are real and equal.");
-						else if (D > 0)
-							System.out.println("D > 0. Roots are real and unequal.");
-						else if (D < 0)
-							System.out.println("D < 0. Roots are imaginary (not real).");
+						if (D == 0) System.out.println("D = 0. Roots are real and equal.");
+						else if (D > 0) System.out.println("D > 0. Roots are real and unequal.");
+						else if (D < 0) System.out.println("D < 0. Roots are imaginary (not real).");
 						break;
 					}
 					default:

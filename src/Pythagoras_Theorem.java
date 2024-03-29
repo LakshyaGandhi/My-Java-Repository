@@ -37,7 +37,7 @@ public class Pythagoras_Theorem {
 					break;
 				
 				case "1":
-					// Finding hypotenuse
+//					Finding hypotenuse
 					System.out.print("Enter opposite/perpendicular = ");
 					String x1 = extscan.nextLine();
 					try {
@@ -57,7 +57,7 @@ public class Pythagoras_Theorem {
 					break;
 				
 				case "2":
-					// Finding perpendicular
+//					Finding perpendicular
 					System.out.print("Enter adjacent/base = ");
 					String y1 = extscan.nextLine();
 					try {
@@ -77,7 +77,7 @@ public class Pythagoras_Theorem {
 					break;
 				
 				case "3":
-					// Finding base
+//					Finding base
 					System.out.print("Enter opposite/perpendicular = ");
 					String z1 = extscan.nextLine();
 					try {

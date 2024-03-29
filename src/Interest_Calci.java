@@ -8,7 +8,6 @@ public class Interest_Calci {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Simple and Compound Interest Calculator");
-		// Continuous loop for user input
 		while (true) {
 			System.out.println("\nEnter the Principal Amount (To start the program)");
 			System.out.println("OR Type 'exit' to quit the program.");

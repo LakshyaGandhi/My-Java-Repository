@@ -84,7 +84,7 @@ public class Recurring_Deposit {
 									break;
 								
 								case "1":
-									// Calculate and display interest and maturity value
+//									Calculate and display interest and maturity value
 									double I1 = (P * n * (n + 1) * R) / (2400);
 									double MV1 = (P * n) + I1;
 									System.out.printf("Interest = Rs %,.2f", I1);
@@ -92,7 +92,7 @@ public class Recurring_Deposit {
 									break;
 								
 								case "2":
-									// Calculate and display rate of interest
+//									Calculate and display rate of interest
 									I_n = P * n * (n + 1);
 									I_d = 2400;
 									double x = MV - (P * n);
@@ -101,7 +101,7 @@ public class Recurring_Deposit {
 									break;
 								
 								case "3":
-									// Calculate and display monthly installment amount
+//									Calculate and display monthly installment amount
 									I_n = (n * (n + 1) * R);
 									I_d = 2400;
 									double[] result = simplest_form_fraction(I_n, I_d);
@@ -114,7 +114,7 @@ public class Recurring_Deposit {
 									break;
 								
 								case "4":
-									// Calculate and display period using quadratic equation
+//									Calculate and display period using quadratic equation
 									double I5_n = (P * R);
 									double I5_d = 2400;
 									double[] result1 = simplest_form_fraction(I5_n, I5_d);

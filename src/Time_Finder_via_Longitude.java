@@ -32,20 +32,20 @@ public class Time_Finder_via_Longitude {
 						int rem1 = (int) rem;
 						int westhrr = 11 - hrr, westrem1 = 60 - rem1;
 						if (num < 180) {
-							// East side time
+							//! East side time
 							System.out.println("The time is " + hrr + "hr : " + rem1 + "min PM for East");
-							// West side time
+							// !West side time
 							System.out.println("The time is " + westhrr + "hr : " + westrem1 + "min AM for West");
 						} else if (num == 180) {
-							// At 180 degrees
+							//! At 180 degrees
 							System.out.println("The time is 12hr : 00min AM for East");
 							System.out.println("The time is 12hr : 00min AM for West");
 						} else {
-							// Longitude greater than 180
+							//! Longitude greater than 180
 							int _12hr_format = hrr - 12;
-							// East side time
+							//1 East side time
 							System.out.println("The time is " + _12hr_format + "hr : " + rem1 + "min AM for East");
-							// West side time
+							//! West side time
 							System.out.println("The time is " + _12hr_format + "hr : " + rem1 + "min PM for West");
 						}
 					} else {

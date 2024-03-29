@@ -25,8 +25,8 @@ public class Three_In_One {
 				case "exit":
 					System.exit(0);
 					break;
-				// Calculator tool
 				case "1":
+//				Calculator tool
 					System.out.println("Enter your first number");
 					Scanner scan1 = new Scanner(System.in);
 					String x = scan1.nextLine();
@@ -78,8 +78,8 @@ public class Three_In_One {
 					}
 					break;
 				
-				// Odd-even seeker tool
 				case "2":
+//				Odd-even seeker tool
 					System.out.println("Type a number = ");
 					Scanner scan2 = new Scanner(System.in);
 					String z = scan2.nextLine();
@@ -96,8 +96,8 @@ public class Three_In_One {
 					}
 					break;
 				
-				// Prime number spotter tool
 				case "3":
+//				Prime number spotter tool
 					System.out.println("Find a prime number between 1 and ");
 					Scanner scan3 = new Scanner(System.in);
 					String a = scan3.nextLine();

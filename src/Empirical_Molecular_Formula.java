@@ -11,14 +11,12 @@ public class Empirical_Molecular_Formula {
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		// Welcome message
 		System.out.println("Empirical & Molecular Formula Finder");
 		System.out.println("Note: Molecular Wt = 2 * Vapour Density\n");
 		System.out.println("Type any word to quit the program OR");
-		System.out.print("Enter number of elements: ");
-		
 		// User input for the number of elements
+		System.out.print("Enter number of elements: ");
 		String a = sc.nextLine();
 		try {
 			int size = Integer.parseInt(a);
@@ -27,7 +25,7 @@ public class Empirical_Molecular_Formula {
 			double[] atwt = new double[size];
 			double[] no_atoms = new double[size];
 			
-			// Create an HTML table with font size adjustments
+			//? Create an HTML table with font size adjustments
 			StringBuilder tableHTML = new StringBuilder("<html><head><style>" + "table { width: 100%; border-collapse: collapse; border-radius: 18px; overflow: hidden; }" + "table, th, td { border: 1px solid black; }" + "th { background-color: #36304a; color: white; }" + "tr:nth-child(even) { background-color: #f2f2f2; }" + "</style></head><body>" + "<table>" + "<tr><th colspan='5'><font size='10'><b>Empirical & Molecular Formula Finder</b></font></th></tr>" + "<tr><th><font size='8'>Element</font></th><th><font size='8'>% Composition</font></th><th><font size='8'>Atomic Mass</font></th><th><font size='8'>Atomic Ratio</font></th><th><font size='8'>Simplest Ratio</font></th></tr>");
 			
 			// Input
@@ -46,7 +44,7 @@ public class Empirical_Molecular_Formula {
 			
 			if (Math.round(flag) == 100) {
 				System.out.println();
-				//atwt
+				//atwt = Atomic Weight
 				for (int i = 0; i < size; i++) {
 					System.out.print("Enter atomic weight for element " + ele[i] + ": ");
 					atwt[i] = sc.nextDouble();
@@ -99,7 +97,7 @@ public class Empirical_Molecular_Formula {
 						else tableHTML.append("<font size='6'>").append(ele[i]).append("</font> ");
 					}
 					
-					// Display the HTML content in a frame
+					//? Display the HTML content in a frame
 					JFrame tabbedFrame = new JFrame("Empirical & Molecular Formula");
 					tabbedFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					tabbedFrame.setSize(800, 600); // Adjust frame size as needed
@@ -107,7 +105,7 @@ public class Empirical_Molecular_Formula {
 					JEditorPane editorPane = new JEditorPane("text/html", tableHTML.toString());
 					editorPane.setEditable(false);
 					
-					// Create a JScrollPane with horizontal scrollbar policy
+					//? Create a JScrollPane with horizontal scrollbar policy
 					JScrollPane scrollPane = new JScrollPane(editorPane);
 					scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 					

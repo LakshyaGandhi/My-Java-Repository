@@ -8,10 +8,8 @@ public class Leap_Year_Finder {
 	 * @param args Command-line arguments (not used).
 	 */
 	public static void main(String[] args) {
-		// Display program information
+		//Welcome message
 		System.out.println("Leap Year and Non-Leap Year Finder");
-		
-		// Continuously prompt user for input
 		while (true) {
 			System.out.println("\nEnter a year to start the program");
 			System.out.println("OR Type 'exit' to quit the program.");

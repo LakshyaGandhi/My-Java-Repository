@@ -49,8 +49,8 @@ public class Pythagorean_Triplet {
 						System.out.print("Enter third number = ");
 						String n3 = extscan.nextLine();
 						try {
-							// Convert the input to double for the third number
-							// Check which number is the largest among the entered values and call the printSolution method accordingly
+							//! Convert the input to double for the third number
+							//! Check which number is the largest among the entered values and call the printSolution method accordingly
 							double num3 = Double.parseDouble(n3);
 							if (num1 >= num2 && num1 >= num3) {
 								printSolution(num1, num2, num3);

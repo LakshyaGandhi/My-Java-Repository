@@ -244,13 +244,11 @@ public class Arithmetic_Progression {
 						System.out.print("Enter the difference: d = ");
 						y = sc.nextLine();
 						try {
-							// Parse the input for the difference 'd' into a Double
 							d = Double.parseDouble(y);
 							// Prompt user to enter the number of terms
 							System.out.print("Sum till 'n' terms: n = ");
 							z = sc.nextLine();
 							try {
-								// Parse the input for the number of terms 'n' into a Double
 								n = Double.parseDouble(z);
 								if (n == (int) n) {
 									// Calculate the sum of the arithmetic progression using the formula

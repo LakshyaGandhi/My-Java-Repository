@@ -60,22 +60,22 @@ public class Two_Digit_Calculator {
 							switch (input) {
 								case 0:
 									// Print solution for addition
-									printSolution(num1, num2, "addition", add);
+									printSolution(num1, num2, "addition", add); //Call func @printSolution
 									break;
 								
 								case 1:
 									// Print solution for subtraction
-									printSolution(num1, num2, "subtraction", sub);
+									printSolution(num1, num2, "subtraction", sub); //Call func @printSolution
 									break;
 								
 								case 2:
 									// Print solution for multiplication
-									printSolution(num1, num2, "multiplication", mul);
+									printSolution(num1, num2, "multiplication", mul); //Call func @printSolution
 									break;
 								
 								case 3:
 									// Print solution for division
-									printSolution(num1, num2, "division", div);
+									printSolution(num1, num2, "division", div); //Call func @printSolution
 									double remainder = num1 % num2;
 									System.out.println("Remainder left = " + remainder);
 									break;

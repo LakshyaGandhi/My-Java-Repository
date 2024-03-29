@@ -31,13 +31,13 @@ public class Geometry_Shapes {
 				
 				case "square":
 					// Calculate area and perimeter of square
-					System.out.print("Enter length or breadth = "); //property of square: size of  length = size of breadth
+					System.out.print("Enter length or breadth = "); //! Property of square: size of  length = size of breadth
 					Scanner square = new Scanner(System.in);
 					String w = square.nextLine();
 					try {
 						double lorb = Double.parseDouble(w);
-						double sqrarea = lorb * lorb; // Area of square formula: side length * side length
-						double sqrperimeter = 4 * lorb; // Perimeter of square formula: 4 * side length
+						double sqrarea = lorb * lorb; //? Area of square formula: side length * side length
+						double sqrperimeter = 4 * lorb; //? Perimeter of square formula: 4 * side length
 						System.out.println("->The Area of Square " + lorb + " is = " + sqrarea + " cm sq.");
 						System.out.println("->The Perimeter of Square " + lorb + " is = " + sqrperimeter + " cm.");
 					} catch (NumberFormatException e) {
@@ -56,8 +56,8 @@ public class Geometry_Shapes {
 						String x1 = rectangle.nextLine();
 						try {
 							double bofr = Double.parseDouble(x1);
-							double recarea = lofr * bofr; // Area of rectangle formula: length * breadth
-							double recperimeter = 2 * (lofr + bofr); // Perimeter of rectangle formula: 2 * (length + breadth)
+							double recarea = lofr * bofr; //? Area of rectangle formula: length * breadth
+							double recperimeter = 2 * (lofr + bofr); //? Perimeter of rectangle formula: 2 * (length + breadth)
 							System.out.println("->The Area of Rectangle " + lofr + " and " + bofr + " is = " + recarea + " cm sq.");
 							System.out.println("->The Perimeter of Rectangle " + lofr + " and " + bofr + " is = " + recperimeter + " cm.");
 						} catch (NumberFormatException e) {
@@ -83,10 +83,10 @@ public class Geometry_Shapes {
 							String y2 = triangle.nextLine();
 							try {
 								double sidec = Double.parseDouble(y2);
-								if (sidea + sideb + sidec > 180) { //Basic rule of triangles: Sum of all sides of a triangle should not be greater than 180°
+								if (sidea + sideb + sidec > 180) { //! Basic rule of triangles: Sum of all sides of a triangle should not be greater than 180°
 									System.out.println("Invalid Values. The Sum of all sides of a triangle is more than 180°");
 								} else {
-									double triperimeter = sidea + sideb + sidec; // Perimeter of triangle formula: side a + side b + side c
+									double triperimeter = sidea + sideb + sidec; //? Perimeter of triangle formula: side a + side b + side c
 									System.out.println("->The Perimeter of Triangle " + sidea + " + " + sideb + " + " + sidec + " is = " + triperimeter + " cm.");
 									break;
 								}
@@ -107,8 +107,8 @@ public class Geometry_Shapes {
 					String z = sc.nextLine();
 					try {
 						double r = Double.parseDouble(z);
-						double circlearea = Math.PI * r * r; // Area of circle formula: π * radius * radius
-						double circleperi = 2 * Math.PI * r; //Circumference of circle formula: 2 * π * radius
+						double circlearea = Math.PI * r * r; //? Area of circle formula: π * radius * radius
+						double circleperi = 2 * Math.PI * r; //? Circumference of circle formula: 2 * π * radius
 						System.out.println("->The Area of Circle " + r + " is = " + circlearea + " cm sq.");
 						System.out.println("->The Circumference of Circle " + r + " is = " + circleperi + " cm");
 					} catch (NumberFormatException e) {

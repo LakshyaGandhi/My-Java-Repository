@@ -61,7 +61,7 @@ public class Matrix {
 						}
 						// Array Copy
 						for (int i = 0; i < rows1; i++) {
-							System.arraycopy(arr3[i], 0, arr1[i], 0, cols1); // Copy the result back to Matrix A
+							System.arraycopy(arr3[i], 0, arr1[i], 0, cols1); //? Copy the result back to Matrix A
 						}
 					} else {
 						System.out.println("Both the Arrays must be of same order."); // Error message for invalid operation
@@ -82,7 +82,7 @@ public class Matrix {
 						}
 						// Array Copy
 						for (int i = 0; i < rows1; i++) {
-							System.arraycopy(arr3[i], 0, arr1[i], 0, cols1); // Copy the result back to Matrix A
+							System.arraycopy(arr3[i], 0, arr1[i], 0, cols1); //? Copy the result back to Matrix A
 						}
 					} else {
 						System.out.println("Both the Arrays must be of same order.");

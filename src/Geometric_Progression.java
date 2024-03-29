@@ -39,7 +39,8 @@ public class Geometric_Progression {
 	public static void main(String[] args) {
 		System.out.println("Geometric Progression");
 		while (true) {
-			System.out.println("\nType - 1: Find t\u2099"); // Prompt user to choose an operation
+			// Prompt user for input selection
+			System.out.println("\nType - 1: Find t\u2099");
 			System.out.println("Type - 2: Find number of terms");
 			System.out.println("Type - 3: Print a G.P.");
 			System.out.println("Type - 4: Check if it's an G.P.");
@@ -63,8 +64,9 @@ public class Geometric_Progression {
 						break;
 					
 					case "1":
+//						Find tn
 						System.out.print("Enter the constant ratio: r = "); // Prompt the user to enter the constant ratio
-						y = sc.nextLine(); // Read the input from the user
+						y = sc.nextLine();
 						try {
 							r = Double.parseDouble(y);
 							System.out.print("Enter the term you want to find: n = ");
@@ -72,7 +74,7 @@ public class Geometric_Progression {
 							try {
 								n = Double.parseDouble(z);
 								ss = subScript((int) n); // Assign the result of the subScript function to variable ss
-								System.out.println("t" + ss + " = " + (a * (Math.pow(r, (n - 1))))); // Print the result of the geometric progression calculation
+								System.out.println("t" + ss + " = " + (a * (Math.pow(r, (n - 1)))));
 							} catch (NumberFormatException e) {
 								System.out.println("Invalid number");
 							}
@@ -82,6 +84,7 @@ public class Geometric_Progression {
 						break;
 					
 					case "2":
+//						Find number of terms
 						System.out.print("Enter the constant ratio: r = ");
 						y = sc.nextLine();
 						try {
@@ -112,6 +115,7 @@ public class Geometric_Progression {
 						break;
 					
 					case "3":
+//						Print a Geometric Progression
 						System.out.print("Enter the constant ratio: r = ");
 						y = sc.nextLine();
 						try {
@@ -142,6 +146,7 @@ public class Geometric_Progression {
 						break;
 					
 					case "4":
+//						Check if it's a Geometric Progression
 						System.out.print("Enter the second term: t\u2082 = ");
 						y = sc.nextLine();
 						try {
@@ -162,6 +167,7 @@ public class Geometric_Progression {
 						break;
 					
 					case "5":
+//						Check a term is in a Geometric Progression
 						System.out.print("Enter the constant ratio: r = "); // Prompt for constant ratio input
 						y = sc.nextLine(); // Read the input
 						try {
@@ -195,6 +201,7 @@ public class Geometric_Progression {
 						break;
 					
 					case "6":
+//						Sum of Geometric Progression
 						System.out.print("Enter the constant ratio: r = "); // Prompt for constant ratio input
 						y = sc.nextLine(); // Read the input
 						try {

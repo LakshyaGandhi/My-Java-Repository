@@ -67,22 +67,22 @@ public class Three_Digit_Calculator {
 								switch (input) {
 									case "0":
 										// Print solution for addition
-										printSolution(num1, num2, num3, "addition", add);
+										printSolution(num1, num2, num3, "addition", add); //Call func @printSolution
 										break;
 									
 									case "1":
 										// Print solution for subtraction
-										printSolution(num1, num2, num3, "subtraction", sub);
+										printSolution(num1, num2, num3, "subtraction", sub); //Call func @printSolution
 										break;
 									
 									case "2":
 										// Print solution for multiplication
-										printSolution(num1, num2, num3, "multiplication", mul);
+										printSolution(num1, num2, num3, "multiplication", mul); //Call func @printSolution
 										break;
 									
 									case "3":
 										// Print solution for division
-										printSolution(num1, num2, num3, "division", div);
+										printSolution(num1, num2, num3, "division", div); //Call func @printSolution
 										// Calculate remainder
 										double remainder = num1 % num2 % num3;
 										System.out.println("Final Remainder left = " + remainder);

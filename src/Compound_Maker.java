@@ -11,8 +11,8 @@ public class Compound_Maker {
 	public static void main(String[] args) {
 		System.out.println("The Compound Maker");
 		while (true) {
-			System.out.println("\nEnter a metal to start the program"); // Prompt user to enter a metal
-			System.out.println("OR Type 'exit' to quit the program."); // Prompt user to type 'exit' to quit
+			System.out.println("\nEnter a metal to start the program");
+			System.out.println("OR Type 'exit' to quit the program.");
 			Scanner extscan = new Scanner(System.in);
 			String ext = extscan.nextLine(); // Read user input
 			// For all other user inputs
@@ -21,8 +21,8 @@ public class Compound_Maker {
 			} else {
 				String[] metals = {"Cu", "Hg", "Ag", "Hg", "Au", "NH4", "H", "Li", "Na", "K", "Fe", "Sn", "Pt", "Mn", "Pb", "Ba", "Ca", "Mg", "Ni", "Zn", "Al", "As", "Bi", "Cr"};
 				String[] nonmetals = {"F", "Br", "Cl", "I", "OH", "NO3", "NO2", "HCO3", "HS", "HSO3", "HSO4", "ClO", "ClO2", "ClO3", "ClO4", "MnO4", "CN", "CH3COO", "AlO2", "O", "(COO)2", "SO4", "SO3", "S", "S2O3", "CO3", "CrO4", "Cr2O7", "SiO3", "SnO3", "ZnO2", "PbO2", "P", "PO3", "PO4", "AsO4", "AsO3", "BO3", "N", "AlO3", "C", "Fe(CN)6", "O2"};
-				List<String> metallists = Arrays.asList(metals); // Convert metal array to a list
-				List<String> nonmetallists = Arrays.asList(nonmetals); // Convert non-metal array to a list
+				List<String> metallists = Arrays.asList(metals); //! Convert metal array to a list
+				List<String> nonmetallists = Arrays.asList(nonmetals); //! Convert non-metal array to a list
 				if (metallists.contains(ext)) {
 					System.out.print("Enter its valency = ");
 					Scanner metalscan = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class Compound_Maker {
 								System.out.print("Enter its valency = ");
 								String y = metalscan.nextLine();
 								try {
-									byte nonmetalv = Byte.parseByte(y); // Parse the user input for non-metal valency to a byte
+									byte nonmetalv = Byte.parseByte(y);
 									if (nonmetalv > 0 && nonmetalv <= 4) {
 										// Output compound based on valencies
 										if (metalv == nonmetalv) {

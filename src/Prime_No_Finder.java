@@ -14,20 +14,19 @@ public class Prime_No_Finder {
 	public static void main(String[] args) {
 		System.out.println("Prime Number Finder");
 		while (true) {
-			// Prompt user for input
 			System.out.println("\nFind a prime number between 1 and...");
 			System.out.println("Type 'exit' to quit the program.");
 			Scanner extscan = new Scanner(System.in);
 			String ex = extscan.nextLine();
 			String ext = ex.toLowerCase();
-			if (ext.equals("exit")) {// Exit program if user inputs 'exit'
+			if (ext.equals("exit")) {
 				System.exit(0);
 			} else {
 				try {
 					long pn = Long.parseLong(ex); // Convert user input to a long
-					int one = 1; // Start from 1
+					int one = 1;
 					if (pn % 2 == 0) {
-						// If input is even, print an error message
+						//! If input is even, print an error message
 						System.out.println("Invalid Input. Enter a Prime Number");
 					} else {
 						// Print numbers starting from 1 up to the entered number

@@ -8,8 +8,6 @@ public class Factors_of_No {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Factor Finder");
-		
-		// Infinite loop to keep the program running
 		while (true) {
 			// Prompt user for input selection
 			System.out.println("\nType 1 - To find Factors of Positive Numbers");
@@ -27,7 +25,7 @@ public class Factors_of_No {
 					System.exit(0);
 					break;
 				case "1":
-					// Find factors of a positive number
+					//! Find factors of a positive number
 					System.out.print("Enter a positive number = ");
 					Scanner sc = new Scanner(System.in);
 					String x = sc.nextLine();
@@ -51,7 +49,7 @@ public class Factors_of_No {
 					break;
 				
 				case "2":
-					// Find factors of a negative number
+					//! Find factors of a negative number
 					System.out.print("Enter a negative number = ");
 					Scanner scan = new Scanner(System.in);
 					String y = scan.nextLine();

@@ -67,20 +67,20 @@ public class Decimal_Fraction_Percent_Conversion {
 					break;
 				
 				case "1": {     //Decimal
-					//to Percent
+					//! to Percent
 					System.out.print("Enter a Decimal = ");
 					String num = sc.nextLine();
 					double num1 = 0.0;
 					try {
 						num1 = Double.parseDouble(num);
-						float x1 = (float) (num1 * 100); //x1=decimal to percentage ie. n*100
+						float x1 = (float) (num1 * 100); //? x1=decimal to percentage ie. n*100
 						System.out.println("Percent: " + x1 + "%");
 					} catch (NumberFormatException e) {
 						System.out.println("Invalid Input. Enter a Decimal");
 					}
-					//to Fraction
+					//! to Fraction
 					int d1 = 1;
-					while (num1 != (int) num1) { //expressing decimal in p/q form, q=can be 10,100,1000,etc...
+					while (num1 != (int) num1) { //? expressing decimal in p/q form, q=can be 10,100,1000,etc...
 						num1 *= 10;
 						d1 *= 10;
 					}
@@ -98,11 +98,11 @@ public class Decimal_Fraction_Percent_Conversion {
 						String b = sc.nextLine();
 						try {
 							double denominator = Double.parseDouble(b);
-							//to Decimal
-							double x2 = numerator / denominator; //x2=fraction to decimal (p/q)
+							//! to Decimal
+							double x2 = numerator / denominator; //? x2=fraction to decimal (p/q)
 							System.out.println("Decimal: " + x2);
-							//to Percent
-							double y2 = x2 * 100; //y2=fraction to percentage (p/q * 100)
+							//! to Percent
+							double y2 = x2 * 100; //? y2=fraction to percentage (p/q * 100)
 							System.out.println("Percent: " + y2 + "%");
 						} catch (NumberFormatException e) {
 							System.out.println("Invalid Input. Enter a appropriate number.");
@@ -119,12 +119,12 @@ public class Decimal_Fraction_Percent_Conversion {
 					try {
 						double percentage4 = Double.parseDouble(f);
 						if (percentage4 <= 100) {
-							//to Decimal
-							double x3 = percentage4 / 100; //converting percentage to decimal, dividing by 100.
+							//! to Decimal
+							double x3 = percentage4 / 100; //? converting percentage to decimal, dividing by 100.
 							System.out.println("Decimal: " + x3);
-							//to Fraction
+							//! to Fraction
 							int d3 = 1;
-							while (x3 != (int) x3) { //expressing decimal in p/q form, q=can be 10,100,1000,etc...
+							while (x3 != (int) x3) { //? expressing decimal in p/q form, q=can be 10,100,1000,etc...
 								x3 *= 10;
 								d3 *= 10;
 							}
